@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/img/try.jpg");
+  background-image: url("img/try.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -41,6 +41,7 @@ nav {
 .link {
   padding-bottom: 9px;
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 .active {
@@ -70,7 +71,7 @@ h2 {
   color: var(--my-white);
 }
 
-main {
+.search-bar {
   height: 80vh;
   margin: auto;
   display: flex;
@@ -90,9 +91,8 @@ h1 {
   text-align: center;
 }
 
-.input {
+input {
   font-size: 22px;
-  /* width: 600px; */
   padding: 20px 20px 20px 75px;
   border-radius: 8px;
   border: none;
@@ -166,6 +166,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-bottom: 12px;
+  
 }
 
 .made-by {
@@ -192,7 +193,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .input {
+  input {
     width: auto;
   }
 
@@ -207,7 +208,7 @@ footer {
     border-radius: 4px;
   }
 
-  .input {
+  input {
     font-size: 16px;
   }
 
