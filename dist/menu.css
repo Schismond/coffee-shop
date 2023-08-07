@@ -10,12 +10,13 @@
   --accent: #b66116;
   --accent-light: hsl(28, 78%, 55%);
   --background: #fff;
-  --footer: #26262a;
+  --footer: #18181b;
 }
 
 body {
   font-family: montserrat, roboto, sans-serif;
 }
+
 
 #content {
   min-height: 100vh;
@@ -124,12 +125,16 @@ input {
 }
 
 .card {
-  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6px;
+  margin-block: 24px;
+}
+
+.card>*{
+  cursor: pointer;
 }
 
 .coffee-type {
@@ -166,7 +171,6 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-bottom: 12px;
-  
 }
 
 .made-by {
