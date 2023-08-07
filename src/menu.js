@@ -1,4 +1,7 @@
 function loadMenu() {
+  var titleElement = document.querySelector("title");
+  titleElement.textContent = "menu";
+
   const main = document.getElementById("main");
   main.textContent = " ";
 
@@ -88,12 +91,12 @@ function loadMenu() {
     cardsDiv.appendChild(card);
   });
 
-  const targetElement = document.getElementById("main"); 
+  const targetElement = document.getElementById("main");
   targetElement.appendChild(searchBarDiv);
   targetElement.appendChild(cardsDiv);
 
-  const linkTag = document.getElementById('myLink');
-  linkTag.href = 'menu.css';
+  const linkTag = document.getElementById("myLink");
+  linkTag.href = "menu.css";
 
   document.head.appendChild(linkTag);
 }

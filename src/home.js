@@ -1,4 +1,7 @@
 function loadHome() {
+  var titleElement = document.querySelector("title");
+  titleElement.textContent = "home";
+
   const main = document.getElementById("main");
   main.textContent = "";
   const heading = document.createElement("h2");
@@ -11,8 +14,8 @@ function loadHome() {
   main.appendChild(button);
 
   // Create a link element
-  const linkTag = document.getElementById('myLink');
-  linkTag.href = 'home.css';
+  const linkTag = document.getElementById("myLink");
+  linkTag.href = "home.css";
 
   document.head.appendChild(linkTag);
 }
