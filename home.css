@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --my-white: #e6e6e6;
+  --my-black: #1a1a1a;
+  --accent: #b66116;
+  --accent-light: #e68633;
+  --background: #fff;
+  --footer: #26262a;
+}
+
+body {
+  font-family: montserrat, roboto, sans-serif;
+}
+
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/try.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 84px;
+  position: relative;
+  color: var(--my-white);
+  gap: 92px;
+  font-weight: 600;
+}
+
+.link {
+  padding-bottom: 9px;
+  font-size: 1.5em;
+}
+
+.active {
+  border-bottom: 3px solid var(--accent);
+}
+
+a {
+  color: var(--my-white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+nav a:active,
+footer a:active {
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "bebas neue";
+  font-weight: 400;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--my-white);
+}
+
+main {
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 5px;
+  color: var(--my-white);
+  padding: 16px 36px;
+  font-size: 24px;
+}
+
+footer {
+  background-color: var(--footer);
+  color: var(--my-white);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.git {
+  height: 24px;
+  width: 24px;
+}
+
+.attributions {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+}
+
+.made-by {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/*  */
+
+@media only screen and (max-width: 480px) {
+  nav {
+    gap: 32px;
+    font-size: 12px;
+  }
+  .made-by p {
+    font-size: 0.7em;
+  }
+  .git {
+    height: 18px;
+    width: 18px;
+  }
+}
