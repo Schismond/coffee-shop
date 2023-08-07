@@ -53,7 +53,6 @@ function setActiveButton(button) {
 
 function createMain() {
   const main = document.createElement("main");
-  //   main.classList.add("main");
   main.setAttribute("id", "main");
   return main;
 }
@@ -71,7 +70,7 @@ function createFooter() {
 
   const gitImage = document.createElement("img");
   gitImage.className = "git";
-  gitImage.src = "/img/github.png";
+  gitImage.src = "img/github.png";
 
   madeByDiv.appendChild(madeByText);
   gitLink.appendChild(gitImage);
@@ -110,7 +109,7 @@ function createFooter() {
 
 function initializeWebsite() {
   const content = document.getElementById("content");
-
+  console.log(content);
   content.appendChild(createNav());
   content.appendChild(createMain());
   content.appendChild(createFooter());
