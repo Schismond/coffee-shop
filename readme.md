@@ -18,9 +18,11 @@ CSS
 - Dynamic content manipulation using JavaScript.
 
 ## Live Demo
-Check out the live demo of the Restaurant Website: [Website Live Demo](https://schismond.github.io/coffee-shop/)
+Check out the live demo of the Restaurant Website: 
+[github pages](https://schismond.github.io/coffee-shop/)
+OR
+[netlify app](https://odin-project-coffee.netlify.app)
 
 ## Acknowledgments 
 This project is part of The Odin Project curriculum.
-You can learn more about this here : [The Odin Project](https://www.theodinproject.com/)
-I want to thank [michalosman](https://github.com/michalosman) , his projects were a big inspiration for me .
+You can learn more about this here : [The Odin Project](https://www.theodinproject.com/) 
